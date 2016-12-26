@@ -15,7 +15,8 @@ cd ~/catkin_ws/src
 git clone https://github.com/birlrobotics/birl_ur5_handeye_calibration.git
 ```
 
-* Install EnsensoSDK and uEyeDriver
+* Install EnsensoSDK and uEye Driver
+
 ⋅⋅*Go to the [offical website](http://www.ensenso.com/support/sdk-download/) and follow the instructions
 
 * Install birl_ensenso
