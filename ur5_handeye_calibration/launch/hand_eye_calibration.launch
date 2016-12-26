@@ -1,0 +1,17 @@
+<launch>
+  <!-- Hand eye calibration setting-->
+  <arg name="num_poses" default="50" />
+  <arg name="ee_x" default="0.26233" />
+  <arg name="ee_y" default="-0.31279" />
+  <arg name="ee_z" default="0.45148" />
+  <arg name="calibration_table_distance" default="0.42" />
+  <arg name="grid_space" default="12.5" />
+
+  <node name="calibration_node" pkg="ur5_handeye_calibration" type="calibration_node" output="screen" respawn="false" args="$(arg num_poses)
+		      $(arg ee_x)
+		      $(arg ee_y)
+                      $(arg ee_z)
+                      $(arg calibration_table_distance)   
+                      $(arg grid_space)" />
+</launch>
+
